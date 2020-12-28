@@ -18,7 +18,7 @@ export default {
   colors: {
     primary: "#4169e1",
     secondary: "#27a727",
-    background: "#fff",
+    background: "#ddd",
     text: "#1b1e21",
     blue: "#4169e1",
     cyan: "#41b9e1",
@@ -34,7 +34,7 @@ export default {
     modes: {
       dark: {
         text: "#fff",
-        background: "#000",
+        background: "#222",
         lite: "#333",
         gray: "#666",
       },

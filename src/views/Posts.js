@@ -48,14 +48,14 @@ const Posts = ({ posts, prevPosts, nextPosts }) => {
         <Box sx={{ width: "50%", py: 3, textAlign: "left" }}>
           {prevPosts !== null && (
             <Link href={"/blog/" + prevPosts} passHref>
-              <a>« see newer posts</a>
+              <a>« newer posts</a>
             </Link>
           )}
         </Box>
         <Box sx={{ width: "50%", py: 3, pr: 3, textAlign: "right" }}>
           {nextPosts !== null && (
             <Link href={"/blog/" + nextPosts} passHref>
-              <a>see older posts »</a>
+              <a> older posts »</a>
             </Link>
           )}
         </Box>

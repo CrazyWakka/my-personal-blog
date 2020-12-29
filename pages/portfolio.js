@@ -3,8 +3,8 @@ import About from "../src/views/About"
 import config from "../blog.config.js"
 
 const AboutPage = () => (
-  <Wrapper url="/about" title={config.title + " | About"}>
-    <About />
+  <Wrapper url="/portfolio" title={config.title + " | Portfolio"}>
+    Portfolio
   </Wrapper>
 )
 

@@ -16,7 +16,7 @@ export default {
     heading: 1.25,
   },
   colors: {
-    primary: "#4169e1",
+    primary: "#220354",
     secondary: "#27a727",
     background: "#ddd",
     text: "#1b1e21",

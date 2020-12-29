@@ -18,6 +18,9 @@ const Nav = (props) => {
       <NavLink href="/about" active={router.pathname === "/about"}>
         About
       </NavLink>
+      <NavLink href="/portfolio" active={router.pathname === "/portfolio"}>
+        Portfolio
+      </NavLink>
     </Box>
   )
 }

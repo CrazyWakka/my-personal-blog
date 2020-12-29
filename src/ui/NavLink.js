@@ -8,7 +8,7 @@ const NavLink = ({ href, active, children }) => (
         py: [2, 3],
         px: [3, 4],
         fontSize: 3,
-        fontWeight: 600,
+        fontWeight: 400,
         display: "inline-block",
         textDecoration: "none",
         borderBottom: "1px solid",

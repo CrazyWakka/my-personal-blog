@@ -18,8 +18,8 @@ const Posts = ({ posts, prevPosts, nextPosts }) => {
             <Box sx={{ pb: 5 }} key={post.slug}>
               <Heading sx={{ pb: 2, position: "relative" }}>
                 {post.draft && <DraftBadge />}
-                <Link href={"/" + post.slug} passHref>
-                  <a>{post.title}</a>
+                <Link variant="nav" href={"/" + post.slug} passHref>
+                  {post.title}
                 </Link>
               </Heading>
               {post.coverImage && (

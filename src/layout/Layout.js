@@ -3,7 +3,6 @@ import theme from "./Theme"
 import { Box } from "theme-ui"
 import PropTypes from "prop-types"
 import Head from "./Head"
-import Style from "./Style"
 import ThemeToggle from "../ui/ThemeToggle"
 import Header from "../ui/Header"
 import Main from "../ui/Main"
@@ -58,8 +57,6 @@ const Layout = (props) => {
         <Main>{props.children}</Main>
         <Footer />
       </Box>
-
-      <Style />
     </>
   )
 }

@@ -15,6 +15,12 @@ export default {
     body: 1.5,
     heading: 1.25,
   },
+  images: {
+    avatar: {
+      height: "200px",
+      border: "50%",
+    },
+  },
   colors: {
     primary: "#220354",
     secondary: "#27a727",

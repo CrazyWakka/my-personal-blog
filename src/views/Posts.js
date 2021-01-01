@@ -1,8 +1,9 @@
 import MDX from "@mdx-js/runtime"
-import { Flex, Box, Heading, Text, Image } from "theme-ui"
+import { Flex, Box, Heading, Text, Image, Card } from "theme-ui"
 import Container from "../ui/Container"
 import DraftBadge from "../ui/DraftBadge"
 import Link from "next/link"
+import { Link as A } from "theme-ui"
 
 const Posts = ({ posts, prevPosts, nextPosts }) => {
   const isLocal = process.env.NODE_ENV === "development"
@@ -18,8 +19,15 @@ const Posts = ({ posts, prevPosts, nextPosts }) => {
             <Box sx={{ pb: 5 }} key={post.slug}>
               <Heading sx={{ pb: 2, position: "relative" }}>
                 {post.draft && <DraftBadge />}
-                <Link variant="nav" href={"/" + post.slug} passHref>
-                  {post.title}
+                <Link href={"/" + post.slug} passHref>
+                  <A
+                    sx={{
+                      textDecoration: "none",
+                      color: "purple",
+                    }}
+                  >
+                    {post.title}
+                  </A>
                 </Link>
               </Heading>
               {post.coverImage && (
@@ -27,8 +35,8 @@ const Posts = ({ posts, prevPosts, nextPosts }) => {
                   sx={{
                     mt: 2,
                     mb: 3,
-                    border: "1px solid",
-                    borderColor: "rgba(0,0,0,.1)",
+                    border: "5px solid",
+                    borderColor: "purple",
                   }}
                   height={post.coverImageHeight}
                   width={post.coverImageWidth}
@@ -36,12 +44,21 @@ const Posts = ({ posts, prevPosts, nextPosts }) => {
                   alt={post.coverImageAlt || ""}
                 />
               )}
-              <Box sx={{ pb: 3 }}>
+              <Card sx={{ pb: 3, px: 3, boxShadow: "0 0 8px" }}>
                 <MDX>{post.excerpt}</MDX>
+              </Card>
+              <Box sx={{ textAlign: "right" }}>
+                <Link href={"/" + post.slug} passHref>
+                  <A
+                    sx={{
+                      textDecoration: "none",
+                      color: "purple",
+                    }}
+                  >
+                    Read more...
+                  </A>
+                </Link>
               </Box>
-              <Link href={"/" + post.slug} passHref>
-                <a>Read more...</a>
-              </Link>
             </Box>
           ))}
       <Flex sx={{ fontStyle: "italic" }}>

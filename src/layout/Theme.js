@@ -5,7 +5,7 @@ export default {
   fonts: {
     body:
       'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "inherit",
+    heading: '"Avenir Next", sans-serif',
     monospace: "Menlo, monospace",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
@@ -28,6 +28,7 @@ export default {
     primary: "#220354",
     secondary: "#27a727",
     background: "#ddd",
+    purple: "#990350",
     modes: {
       dark: {
         text: "#fff",
@@ -35,6 +36,17 @@ export default {
         lite: "#333",
         gray: "#666",
       },
+    },
+  },
+  cards: {
+    primary: {
+      backgroundColor: "#EEE",
+      borderRadius: 10,
+      padding: 2,
+      marginX: 4,
+      marginTop: 1,
+      marginBottom: 3,
+      textAlign: "center",
     },
   },
   text: {

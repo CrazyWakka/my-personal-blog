@@ -7,7 +7,12 @@ const Nav = (props) => {
   return (
     <Box
       as="nav"
-      sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        background: "purple",
+      }}
     >
       <NavLink
         href="/"

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Box, useColorMode } from "theme-ui"
 import Button from "./Button"
+import { IconButton } from "theme-ui"
 
 const ThemeToggle = (props) => {
   const [colorMode, setColorMode] = useColorMode()
@@ -28,7 +29,7 @@ const ThemeToggle = (props) => {
           setColorMode(colorMode === "default" ? "dark" : "default")
         }}
       >
-        switch to {colorMode === "default" ? "dark" : "light"} mode
+        {colorMode === "default" ? "dark" : "light"} theme
       </Button>
     </Box>
   )

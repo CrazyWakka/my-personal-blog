@@ -6,6 +6,7 @@ import Link from "next/link"
 import Container from "../ui/Container"
 import CodeBlock from "../ui/CodeBlock"
 import DraftBadge from "../ui/DraftBadge"
+import { Button } from "rebass"
 
 const BlogPost = ({ post }) => {
   const isLocal = process.env.NODE_ENV === "development"
@@ -13,6 +14,7 @@ const BlogPost = ({ post }) => {
   const components = {
     Box: (props) => <Box {...props} />,
     pre: (props) => <div {...props} />,
+    Button: (props) => <Button {...props} />,
     code: CodeBlock,
   }
 

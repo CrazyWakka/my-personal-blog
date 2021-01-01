@@ -23,6 +23,7 @@
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-ga": "^3.3.0",
+        "rebass": "^4.0.7",
         "theme-ui": "^0.3.4"
     },
     "devDependencies": {

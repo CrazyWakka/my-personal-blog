@@ -16,14 +16,14 @@ const DocHead = (props) => (
         <meta property="og:image:alt" content={props.imageAlt} />
       )}
       <meta property="og:url" content={props.url} />
-      <meta
+      {/* <meta
         name="twitter:card"
         content={props.imageUrl ? "summary_large_image" : "summary"}
-      />
+      /> 
       <meta name="twitter:site" content={config.twitter} />
       <meta name="twitter:creator" content={config.twitter} />
       <meta name="twitter:title" content={props.title} />
-      <meta name="twitter:description" content={props.description} />
+      <meta name="twitter:description" content={props.description} /> */}
       {props.imageUrl && (
         <meta property="twitter:image" content={props.imageUrl} />
       )}

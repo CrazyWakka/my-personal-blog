@@ -18,7 +18,7 @@ export default {
   images: {
     avatar: {
       height: "200px",
-      border: "50%",
+      borderRadius: "50%",
     },
   },
   colors: {

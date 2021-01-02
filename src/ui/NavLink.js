@@ -11,7 +11,7 @@ const NavLink = ({ href, active, children }) => (
         fontWeight: 400,
         display: "inline-block",
         opacity: active ? "70%" : "",
-        backgroundColor: active ? "#bbbbbb" : "",
+        backgroundColor: active ? "#bbbbbb" : "#444444",
         color: active ? "primary" : "white",
         textDecoration: "none",
         cursor: "pointer",

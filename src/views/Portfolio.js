@@ -8,11 +8,11 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 1,
+    items: 3,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 1,
+    items: 2,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -24,26 +24,45 @@ const responsive = {
   },
 }
 
+const images = [
+  "img/blog/washer_dryer_platform.JPG",
+  "img/blog/standing_desk.JPG",
+  "img/blog/wall_clamp_storage.JPG",
+  "img/blog/multi_tier_corner_shelf.JPG",
+  "img/blog/fallout_shelf_after_stain.JPG",
+  "img/blog/printer_cart_final.JPG",
+  "img/blog/guest_bathroom_shelf.JPG",
+]
+
 const Portfolio = (props) => {
   return (
     <Container>
-      <Box sx={{ p: 3, m: 3, fontSize: 4, textAlign: "center" }}>
+      <Box
+        sx={{
+          p: 3,
+          m: 3,
+          fontSize: 4,
+          textAlign: "center",
+        }}
+      >
         Some of my creations
       </Box>
       <Carousel
         responsive={responsive}
         autoPlay={true}
         autoPlaySpeed={5000}
-        ssr={true}
         infinite={true}
+        showDots={true}
       >
-        <Image src="img/blog/washer_dryer_platform.JPG"></Image>
-        <Image src="img/blog/standing_desk.JPG"></Image>
-        <Image src="img/blog/wall_clamp_storage.JPG"></Image>
-        <Image src="img/blog/multi_tier_corner_shelf.JPG"></Image>
-        <Image src="img/blog/fallout_shelf_after_stain.JPG"></Image>
-        <Image src="img/blog/printer_cart_final.JPG"></Image>
-        <Image src="img/blog/guest_bathroom_shelf.JPG"></Image>
+        {images.map((image) => {
+          return (
+            <Image
+              key={image}
+              style={{ maxHeight: "400px" }}
+              src={image}
+            ></Image>
+          )
+        })}
       </Carousel>
     </Container>
   )

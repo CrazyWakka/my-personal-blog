@@ -1,7 +1,7 @@
 import MDX from "@mdx-js/runtime"
 import config from "../../blog.config"
 import { DiscussionEmbed } from "disqus-react"
-import { Box, Text, Heading, Image } from "theme-ui"
+import { Box, Text, Heading, Image, Embed } from "theme-ui"
 import Link from "next/link"
 import Container from "../ui/Container"
 import CodeBlock from "../ui/CodeBlock"
@@ -15,6 +15,7 @@ const BlogPost = ({ post }) => {
     Box: (props) => <Box {...props} />,
     pre: (props) => <div {...props} />,
     Button: (props) => <Button {...props} />,
+    Embed: (props) => <Embed {...props} />,
     code: CodeBlock,
   }
 

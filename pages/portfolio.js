@@ -1,11 +1,11 @@
 import Wrapper from "../src/layout/Wrapper"
-import About from "../src/views/About"
+import Portfolio from "../src/views/Portfolio"
 import config from "../blog.config.js"
 
-const AboutPage = () => (
+const PortfolioPage = () => (
   <Wrapper url="/portfolio" title={config.title + " | Portfolio"}>
-    Portfolio
+    <Portfolio />
   </Wrapper>
 )
 
-export default AboutPage
+export default PortfolioPage

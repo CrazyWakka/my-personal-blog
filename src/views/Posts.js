@@ -44,7 +44,7 @@ const Posts = ({ posts, prevPosts, nextPosts }) => {
                   alt={post.coverImageAlt || ""}
                 />
               )}
-              <Card sx={{ pb: 3, px: 3, boxShadow: "0 0 8px" }}>
+              <Card sx={{ pb: 3, px: 3, boxShadow: "1px 2px 3px" }}>
                 <MDX>{post.excerpt}</MDX>
               </Card>
               <Box sx={{ textAlign: "right" }}>
